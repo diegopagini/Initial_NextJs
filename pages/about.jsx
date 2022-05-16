@@ -16,7 +16,8 @@ export default function AboutPage() {
 			<main className={styles.main}>
 				<h1 className={styles.title}>
 					{/* Ir a <a href='/'>Home</a> */}
-					Ir a <Link href='/'>Home</Link>
+					Ir a{' '}
+					<Link href={{ pathname: '/', query: { name: 'test' } }}>Home</Link>
 					{/* El componente "Link" de Next es la que utilizamos para hacer la navegación. */}
 				</h1>
 			</main>
