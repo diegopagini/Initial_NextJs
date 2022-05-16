@@ -1,9 +1,7 @@
 /** @format */
-import Head from 'next/head';
 import Link from 'next/link';
 
-import { Navbar } from '../components/Navbar';
-import styles from '../styles/Home.module.css';
+import { MainLayout } from '../components/layouts/MainLayout';
 
 /**
  * Esta forma de importar estilos genera encapsulación.
@@ -16,28 +14,15 @@ import styles from '../styles/Home.module.css';
  */
 export default function HomePage() {
 	return (
-		<div className={styles.container}>
-			{/* "Head" es el componente propio que ofrece Next para generar meta tags en cada página. Ideal para el SEO.
-				Reemplaza la etiqueta head de nuestra página por defecto. */}
-			<Head>
-				<title>Home - Next</title>
-				<meta name='description' content='Home Page' />
-				<meta name='keywords' content='Curso, next.js' />
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+		<MainLayout>
+			<h1 className={'title'}>Home Page</h1>
 
-			<Navbar />
-
-			<main className={styles.main}>
-				<h1>Home Page</h1>
-
-				<h1 className={styles.title}>
-					{/* Ir a <a href='/about'>About</a> */}
-					Ir a <Link href='/about'>About</Link>
-					{/* El componente "Link" de Next es la que utilizamos para hacer la navegación. Y que no hace un full refresh del sitio.
+			<h1 className={'title'}>
+				{/* Ir a <a href='/about'>About</a> */}
+				Ir a <Link href='/about'>About</Link>
+				{/* El componente "Link" de Next es la que utilizamos para hacer la navegación. Y que no hace un full refresh del sitio.
 						Como en una SPA. Hace un prefetch para que de ese comportamiento. */}
-				</h1>
-			</main>
-		</div>
+			</h1>
+		</MainLayout>
 	);
 }
