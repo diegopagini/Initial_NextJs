@@ -1,0 +1,11 @@
+/** @format */
+
+/* No es posible estilizar directamente un elemeno root.
+	* a {
+	* margin: 1rem;
+	* }
+*/
+
+.menu-container a {
+	margin: 1rem;
+}
