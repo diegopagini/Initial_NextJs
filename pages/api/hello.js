@@ -2,7 +2,7 @@
 
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 /**
- * Restfull API que ya provee Next
+ * RESTful API que ya provee Next
  */
 
 export default function handler(req, res) {

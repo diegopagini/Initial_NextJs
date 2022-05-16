@@ -1,5 +1,6 @@
 /** @format */
 import Head from 'next/head';
+import Link from 'next/link';
 
 import styles from '../styles/Home.module.css';
 
@@ -26,7 +27,10 @@ export default function HomePage() {
 
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-					Ir a <a href='/about'>About</a>
+					{/* Ir a <a href='/about'>About</a> */}
+					Ir a <Link href='/about'>About</Link>
+					{/* El componente "Link" de Next es la que utilizamos para hacer la navegación. Y que no hace un full refresh del sitio.
+						Como en una SPA. Hace un prefetch para que de ese comportamiento. */}
 				</h1>
 			</main>
 		</div>
