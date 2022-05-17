@@ -12,7 +12,7 @@ import { MainLayout } from '../components/layouts/MainLayout';
  * La extension puede ser tanto .js como .jsx.
  * Los componentes no pueden tener su nombre capitalizado. Deben estar en minúscula.
  */
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
 	return (
 		<MainLayout>
 			<h1 className={'title'}>Home Page</h1>

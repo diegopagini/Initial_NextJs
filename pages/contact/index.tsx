@@ -5,7 +5,7 @@ import { MainLayout } from '../../components/layouts/MainLayout';
 
 // En caso de crear nuestra página dentro de una carpeta es necesario que su nombre sea index.
 
-export default function Conctact() {
+export default function Conctact(): JSX.Element {
 	return (
 		<MainLayout>
 			<h1>Concat Page</h1>

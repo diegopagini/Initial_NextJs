@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { DarkLayout } from '../components/layouts/DarkLayout';
 import { MainLayout } from '../components/layouts/MainLayout';
 
-export default function AboutPage() {
+export default function AboutPage(): JSX.Element {
 	return (
 		<>
 			<h1 className='title'>About Page</h1>
@@ -24,7 +24,7 @@ export default function AboutPage() {
  * @returns Nuestros layouts anidados.
  */
 
-AboutPage.getLayout = function getLayout(page) {
+AboutPage.getLayout = function getLayout(page: JSX.Element) {
 	return (
 		<MainLayout>
 			<DarkLayout>{page}</DarkLayout>

@@ -5,7 +5,7 @@ import { MainLayout } from '../../components/layouts/MainLayout';
 
 // En caso de crear nuestra página dentro de una carpeta es necesario que su nombre sea index.
 
-export default function Pricing() {
+export default function Pricing(): JSX.Element {
 	return (
 		<MainLayout>
 			<h1>Pricing Page</h1>
