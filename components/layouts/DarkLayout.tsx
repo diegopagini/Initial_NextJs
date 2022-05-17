@@ -1,7 +1,12 @@
 /** @format */
+import React, { PropsWithChildren } from 'react';
+
+type Props = {};
 
 // High order component. No es más que un componente que recibe componentes hijos.
-export const DarkLayout = ({ children }) => {
+export const DarkLayout: React.FC<PropsWithChildren<Props>> = ({
+	children,
+}) => {
 	return (
 		<div
 			style={{

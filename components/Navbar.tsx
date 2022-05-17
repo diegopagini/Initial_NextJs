@@ -2,7 +2,7 @@
 import { ActiveLink } from './ActiveLink';
 import styles from './Navbar.module.css';
 
-const menuItems = [
+const menuItems: { text: string; href: string }[] = [
 	{
 		text: 'Home',
 		href: '/',

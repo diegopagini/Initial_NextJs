@@ -1,12 +1,17 @@
 /** @format */
 import Head from 'next/head';
+import React, { PropsWithChildren } from 'react';
 
 import { Navbar } from '../Navbar';
 import styles from './MainLayout.module.css';
 
+type Props = {};
+
 // Los Layouts son componentes que se reutilizan para mostrar la misma vista en lugares repetidos.
 
-export const MainLayout = ({ children }) => {
+export const MainLayout: React.FC<PropsWithChildren<Props>> = ({
+	children,
+}) => {
 	return (
 		<div className={styles.container}>
 			{/* "Head" es el componente propio que ofrece Next para generar meta tags en cada página. Ideal para el SEO.
