@@ -8,7 +8,7 @@ import { MainLayout } from '../../components/layouts/MainLayout';
 export default function Conctact(): JSX.Element {
 	return (
 		<MainLayout>
-			<h1>Concat Page</h1>
+			<h1>Contact Page</h1>
 
 			<h1 className={'title'}>
 				Ir a <Link href={{ pathname: '/' }}>Home</Link>
